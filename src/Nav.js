@@ -22,16 +22,16 @@ const Nav = () => {
         />
         </div>
 
-        <NavLink style={{ display: openNav ? "block" : "none" }} to="/home">
+        <NavLink to="/home">
           Home
         </NavLink>
-        <NavLink style={{ display: openNav ? "block" : "none" }} to="/about">
+        <NavLink to="/about">
           About
         </NavLink>
-        <NavLink style={{ display: openNav ? "block" : "none" }} to="/contact">
+        <NavLink to="/contact">
           Contact
         </NavLink>
-        <NavLink style={{ display: openNav ? "block" : "none" }} to="/team">
+        <NavLink to="/team">
           Team
         </NavLink>
       </div>

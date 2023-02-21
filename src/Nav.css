@@ -22,7 +22,7 @@ a.active {
 }
 
 #hamburger {
-    width: 50px;
+    width: 0px;
     display: none;
     margin: 0;
     padding: 0;
@@ -39,6 +39,10 @@ a.active {
     #nav-bar {
         width: 100%;
         text-align: left;
+    }
+
+    #hamburger {
+        width: 50px;
     }
 
 }
