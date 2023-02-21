@@ -18,7 +18,7 @@ const Nav = () => {
           id="hamburger"
           src="https://cdn.iconscout.com/icon/free/png-512/hamburger-menu-462145.png?f=avif&w=512"
           onClick={() => SetOpenNav(!openNav)}
-          style={{ display: openNav ? "inline" : "block" }}
+        //   style={{ display: openNav ? "inline" : "block" }}
         />
         </div>
 
