@@ -1,13 +1,17 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Nav from "./Nav";
+import ResponsiveAppBar from "./Components/Nav";
+import Home from "./Components/Home";
+import Help from "./Components/Help";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Nav />
-      </BrowserRouter>
+      <ResponsiveAppBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/help" element={<Help />} />
+      </Routes>
     </>
   );
 }
