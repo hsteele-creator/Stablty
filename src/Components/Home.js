@@ -1,7 +1,10 @@
 import React from "react";
+import Overview from "./Overview";
 
 const Home = () => {
-    return <h1>Home</h1>
+    return (
+        <Overview />
+    ) 
 }
 
 export default Home
