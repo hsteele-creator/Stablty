@@ -1,0 +1,28 @@
+#solution-title {
+    padding-bottom: 50px;
+}
+
+#solution-box {
+    width: 200px;
+}
+
+#solution-box-header {
+    margin: 20px;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.solution-box-text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+}
