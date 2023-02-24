@@ -1,0 +1,28 @@
+#opportunity-title {
+    padding: 50px;
+}
+
+#opportunity-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.opportunity-box {
+    width: 30%;
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px;
+    border: 0.5px solid;
+}
+
+@media only screen and (max-width: 600px) {
+    .opportunity-box {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    #opportunity-container {
+        display: block;
+    }
+}

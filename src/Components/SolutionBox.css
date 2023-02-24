@@ -1,19 +1,18 @@
 #solution-title {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 #solution-box {
-    width: 200px;
+    width: 30%;
+    max-width: 500px;
+    padding: 50px 20px;
 }
 
 #solution-box-header {
     margin: 20px;
     padding: 5px 0;
-    border-radius: 6px;
-    border: 1px solid;
     font-size: 20px;
 }
-
 
 img {
     width: 150px;
@@ -25,4 +24,13 @@ img {
     text-align: center;
     font-size: 12px;
     line-height: 1.8;
+}
+
+@media only screen and (max-width: 600px) {
+    #solution-box {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid grey;
+    }
 }
