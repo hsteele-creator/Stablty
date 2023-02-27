@@ -14,12 +14,12 @@ const Solution = () => {
           <SolutionBox
             header="Intuitive"
             image={meditation}
-            content="Stablty is a solution for people who don't connect with meditation. It offers an intuituve and comprehensive platform that engages users to learn and utilize healthy tools to control their mind"
+            content="Stablty is a solution for people who don't connect with meditation. It offers an intuituve and comprehensive platform that engages users to learn and utilize healthy tools to control their mind."
           />
           <SolutionBox
             header="Innovative"
             image={nature}
-            content="Stablty combines the latest scientific research in mental health with effective techniques that users can quickly pick up and adapt to their lifestyle. It's a fitness app for mindfulness that helps users build their mental muscles"
+            content="Stablty combines the latest scientific research in mental health with effective techniques that users can quickly pick up and adapt to their lifestyle. It's a fitness app for mindfulness that helps users build their mental muscles."
           />
           <SolutionBox
             header="Adaptive"
