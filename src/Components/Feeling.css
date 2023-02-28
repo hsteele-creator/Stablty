@@ -1,0 +1,38 @@
+#feelings-title {
+    padding-bottom: 50px;
+}
+
+#feelings-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 30%;
+    max-width: 300px;
+    height: 200px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 20px;
+    text-align: center;
+}
+
+.icon {
+    width: 150px;
+}
+
+@media screen and (max-width : 650px) {
+    #feelings-container {
+        display: block;
+    }
+
+    .container div {
+        height: 200px;
+        margin: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        max-width: 300px;
+    }
+}

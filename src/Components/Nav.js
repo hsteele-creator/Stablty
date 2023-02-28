@@ -16,7 +16,7 @@ import { NavLink } from "react-router-dom";
 import logo from "./logo.jpg"
 import "./Nav.css";
 
-const pages = ["Help"];
+const pages = ["Help", "Feeling"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
