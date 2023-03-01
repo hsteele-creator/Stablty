@@ -3,10 +3,20 @@ import "./Overview.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
 import bluebg from "./bluebg.jpg";
+import mountain from "./mountain.jpg";
+import BlueWhite from "./bluewhite.jpg"
 
 const Overview = () => {
   return (
-    <div id="overview-container" style={{ backgroundImage: `url(${bluebg})` , backgroundRepeat : "no-repeat", backgroundPosition : "center", backgroundSize : "cover"}}>
+    <div
+      id="overview-container"
+      style={{
+        backgroundImage: `url(${BlueWhite})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
       <h1>Overview</h1>
       <h6>Who we are</h6>
       <p>

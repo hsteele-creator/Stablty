@@ -1,13 +1,15 @@
 import React from "react";
 import "./Feeling.css";
 import { NavLink } from "react-router-dom";
-import Anger from "./anger.png";
-import Depression from "./depression.png"
+import Anger from "./angry.svg";
+import Depression from "./depression.svg"
 import FeelingCard from "./FeelingCard";
-import Stress from "./stress.png"
-import Lonely from "./alone.png"
-import Sad from "./man.png"
-import Anxiety from "./anxiety.png"
+import Stress from "./stress.svg"
+import Lonely from "./lonely.svg"
+import Sad from "./sad.svg"
+import Anxiety from "./anxiety.svg"
+import Fear from "./fear.svg"
+import Helpless from "./helpless.svg"
 
 const Feeling = () => {
   return (
@@ -20,6 +22,9 @@ const Feeling = () => {
         <FeelingCard title={"Lonely"} img={Lonely}  />
         <FeelingCard title={"Sadness"} img={Sad}  />
         <FeelingCard title={"Anger"} img={Anger}   />
+        <FeelingCard title={"Helpless"} img={Helpless}   />
+        <FeelingCard title={"Fear"} img={Fear}   />
+        <FeelingCard title={"Jealous"} img={Anger}   />
       </div>
     </>
   );
