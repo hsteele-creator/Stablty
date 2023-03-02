@@ -1,9 +1,18 @@
 * {
   text-align: center;
+  box-sizing: border-box;
 }
 
 #overview-container {
-    padding: 50px;
+    display: flex;
+}
+
+#text-container {
+  width: 50%;
+}
+
+#image-slider-container {
+  width: 50%;
 }
 
 h1 {
