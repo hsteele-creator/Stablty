@@ -4,11 +4,14 @@ import meditation from "./meditation.jpg";
 import nature from "./nature.jpg";
 import holdingphone from "./holdingphone.jpg";
 import "./Solution.css";
+import ImageSLider from "./ImageSlider";
+
+const slides = [{ url: meditation }, { url: nature }, { url: holdingphone }];
 
 const Solution = () => {
   return (
     <>
-      <div id="solution-container">
+      {/* <div id="solution-container">
         <h1 id="solution-title">Our Solution</h1>
         <div id="solution">
           <SolutionBox
@@ -27,6 +30,10 @@ const Solution = () => {
             content="Stablty offers customization that analyzes user patterns, suggests targeted areas for improvement, and allows the user to choose their own learning paths."
           />
         </div>
+      </div> */}
+
+      <div className="image-slider-container">
+        <ImageSLider slides={slides} />
       </div>
     </>
   );

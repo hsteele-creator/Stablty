@@ -1,6 +1,6 @@
 import React from "react";
 import "./ImageSlider.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ImageSLider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,15 +53,25 @@ const ImageSLider = ({ slides }) => {
   };
 
   const dotContainersStyles = {
-    display : "flex",
-    justifyContent : "center"
-  }
+    display: "flex",
+    justifyContent: "center",
+  };
 
   const dotStyles = {
-    margin : "-50px 3px",
-    cursor : "pointer",
-    fontSize : "20px"
-  }
+    margin: "-50px 3px",
+    cursor: "pointer",
+    fontSize: "20px",
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const isLastSlide = currentIndex === slides.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
 
   return (
     <div style={sliderStyles}>
@@ -75,7 +85,11 @@ const ImageSLider = ({ slides }) => {
 
       <div style={dotContainersStyles}>
         {slides.map((slide, i) => {
-          return <div style={dotStyles} key={i} onClick={() => setCurrentIndex(i)}>●</div>;
+          return (
+            <div style={dotStyles} key={i} onClick={() => setCurrentIndex(i)}>
+              ●
+            </div>
+          );
         })}
       </div>
     </div>
