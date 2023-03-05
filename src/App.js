@@ -13,6 +13,11 @@ import Anger from "./Components/Anger";
 import Fear from "./Components/Fear";
 import Helpless from "./Components/Helpless";
 import Jealous from "./Components/Jealous";
+import Relationship from "./Components/Relationship";
+import PositiveAttitude from "./Components/PositiveAttitude"
+import StressManagement from "./Components/StressManagement"
+import Coping from "./Components/Coping"
+import Goals from "./Components/Goals"
 
 function App() {
   return (
@@ -31,6 +36,11 @@ function App() {
         <Route path="/fear" element={<Fear />} />
         <Route path="/jealous" element={<Jealous />} />
         <Route path="/helpless" element={<Helpless />} />
+        <Route path="/goals" element={<Goals />} />
+        <Route path="/stressmanagement" element={<StressManagement/>} />
+        <Route path="/relationship" element={<Relationship />} />
+        <Route path="/positiveattitude" element={<PositiveAttitude />} />
+        <Route path="/coping" element={<Coping />} />
       </Routes>
     </>
   );

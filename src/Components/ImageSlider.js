@@ -2,7 +2,7 @@ import React from "react";
 import "./ImageSlider.css";
 import { useState, useEffect } from "react";
 
-const ImageSLider = ({ slides }) => {
+const ImageSLider = ({ slides, text }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const slideStyles = {
@@ -86,9 +86,11 @@ const ImageSLider = ({ slides }) => {
       <div style={dotContainersStyles}>
         {slides.map((slide, i) => {
           return (
-            <div style={dotStyles} key={i} onClick={() => setCurrentIndex(i)}>
-              ●
-            </div>
+            <>
+              <div style={dotStyles} key={i} onClick={() => setCurrentIndex(i)}>
+                ●
+              </div>
+            </>
           );
         })}
       </div>
