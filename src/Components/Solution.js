@@ -6,7 +6,7 @@ import holdingphone from "./holdingphone.jpg";
 import "./Solution.css";
 import ImageSLider from "./ImageSlider";
 
-const slides = [{ url: meditation, text : "hello" }, { url: nature, text : "hello" }, { url: holdingphone, text : "hello" }];
+const slides = [{ url: meditation}, { url: nature }, { url: holdingphone}];
 
 const Solution = () => {
   return (

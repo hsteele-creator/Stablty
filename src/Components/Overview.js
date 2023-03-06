@@ -8,20 +8,35 @@ import BlueWhite from "./bluewhite.jpg";
 import GradientBG from "./gradient-bg.png";
 import ImageSLider from "./ImageSlider";
 
-const slides = [{ url: mountain }, { url: bluebg }, { url: BlueWhite }];
+const slides = [
+  { url: mountain },
+  { url: bluebg },
+  { url: BlueWhite },
+  {
+    url: GradientBG,
+    text: {
+      title: "Overview",
+      header: "Who we are",
+      first:
+        "We help people create mental stability, and develop a mindful practice.",
+      second:
+        "Diverse, varied, scientfifically proven exercises engage users to develop healthy habits and positively impact their mental health.",
+    },
+    button: { link: "/help", text: "learn a skill" },
+  },
+];
 
 const Overview = () => {
   return (
     <div
       id="overview-container"
       style={{
-        backgroundImage: `url(${GradientBG})`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
     >
-      <div id="text-container">
+      {/* <div id="text-container">
         <h1>Overview</h1>
         <h6>Who we are</h6>
         <p>
@@ -38,7 +53,7 @@ const Overview = () => {
             We can Help
           </NavLink>
         </Button>
-      </div>
+      </div> */}
 
       <div id="image-slider-container">
         <ImageSLider slides={slides} />

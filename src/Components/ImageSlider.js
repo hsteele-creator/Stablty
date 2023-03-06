@@ -1,7 +1,8 @@
 import React from "react";
-import "./ImageSlider.css";
 import { useState, useEffect } from "react";
-
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import "./ImageSlider.css";
 const ImageSLider = ({ slides, text }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -81,7 +82,27 @@ const ImageSLider = ({ slides, text }) => {
       <div style={rightArrowStyles} onClick={goToNext}>
         &#8680;
       </div>
-      <div style={slideStyles}></div>
+      <div style={slideStyles}>
+        {slides[currentIndex].text ? (
+          <div className="slider-text-container">
+            <h1 className="title">{slides[currentIndex].text["title"]}</h1>
+            <h6 className="header">{slides[currentIndex].text["header"]}</h6>
+            <p className="first-text">{slides[currentIndex].text["first"]}</p>
+            <p className="second-text">{slides[currentIndex].text["second"]}</p>
+            {slides[currentIndex].button ? (
+              <Link to={slides[currentIndex].button.link}>
+                <Button variant="contained">
+                  {slides[currentIndex].button.text}
+                </Button>
+              </Link>
+            ) : (
+              ""
+            )}
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
 
       <div style={dotContainersStyles}>
         {slides.map((slide, i) => {
