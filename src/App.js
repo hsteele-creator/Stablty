@@ -18,6 +18,7 @@ import PositiveAttitude from "./Components/PositiveAttitude"
 import StressManagement from "./Components/StressManagement"
 import Coping from "./Components/Coping"
 import Goals from "./Components/Goals"
+import Gratitude from "./Components/Gratitude";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/relationship" element={<Relationship />} />
         <Route path="/positiveattitude" element={<PositiveAttitude />} />
         <Route path="/coping" element={<Coping />} />
+        <Route path="/gratitude" element={<Gratitude />} />
       </Routes>
     </>
   );
