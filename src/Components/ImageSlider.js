@@ -91,7 +91,7 @@ const ImageSLider = ({ slides, text }) => {
             <p className="second-text">{slides[currentIndex].text["second"]}</p>
             {slides[currentIndex].button ? (
               <Link to={slides[currentIndex].button.link}>
-                <Button variant="contained">
+                <Button variant="contained" className="slider-btn">
                   {slides[currentIndex].button.text}
                 </Button>
               </Link>
