@@ -104,7 +104,7 @@ const ImageSLider = ({ slides, text }) => {
         )}
       </div>
 
-      <div style={dotContainersStyles}>
+      {/* <div style={dotContainersStyles}>
         {slides.map((slide, i) => {
           return (
             <>
@@ -114,7 +114,7 @@ const ImageSLider = ({ slides, text }) => {
             </>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

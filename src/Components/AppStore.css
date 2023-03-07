@@ -1,0 +1,78 @@
+#app-container {
+    width: 100%;
+    height: 350px;
+    background-color: lightblue;
+}
+
+#app-store-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding: 50px 0;
+}
+
+#app-store-text  h3 {
+    font-size: 20px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+#app-store-text p {
+    text-align: left;
+}
+
+.app-btn {
+    margin-left: 10px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 0;
+    background-color: blue;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+
+.app-btn a {
+    color: white;
+}
+
+.app-btn:hover {
+    cursor: pointer;
+}
+
+#phone-img {
+    width: 200px;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#credit {
+    font-size: 0.1px;
+}
+
+@media screen and (max-width: 600px) {
+    #app-store-container {
+        margin-top: 0;
+        max-width: 600px;
+        padding: 20px;
+       margin-bottom: 30px;
+       margin-left: 20px;
+    }
+
+    #phone-img {
+        width: 150px;
+        margin-top: 50px;
+    }
+
+    #app-store-text  h3 {
+        font-size: 18px;
+        padding-top: 50px;
+        text-align: left;
+    }
+}
