@@ -1,6 +1,8 @@
 import React from "react";
 import "./Overview.css";
 import "./Oportunity.css";
+import future from "./future.jpg"
+
 
 const Opportunity = () => {
   return (
@@ -21,6 +23,8 @@ const Opportunity = () => {
           Users can <span style={{ fontWeight: "bold" }}>access proven tools</span> in a simple format from specialists in the field to improve quickly.
         </div>
       </div>
+
+      <img id="future" src={future} />
     </>
   );
 };

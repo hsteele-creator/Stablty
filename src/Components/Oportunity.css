@@ -21,6 +21,11 @@
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+#future {
+    width: 70%;
+    margin-top: 50px;
+}
+
 @media only screen and (max-width: 600px) {
     .opportunity-box {
         width: 100%;
@@ -31,5 +36,11 @@
 
     #opportunity-container {
         display: block;
+    }
+
+    #future {
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 }

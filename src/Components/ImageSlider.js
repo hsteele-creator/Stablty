@@ -89,6 +89,11 @@ const ImageSLider = ({ slides, text }) => {
             <h6 className="header">{slides[currentIndex].text["header"]}</h6>
             <p className="first-text">{slides[currentIndex].text["first"]}</p>
             <p className="second-text">{slides[currentIndex].text["second"]}</p>
+            {slides[currentIndex].images ? <div id="slideshow-images">
+              <img id="first-img" src={slides[currentIndex].images.first} />
+              <img id="second-img" src={slides[currentIndex].images.second} />
+            </div> : ""}
+
             {slides[currentIndex].button ? (
               <Link to={slides[currentIndex].button.link}>
                 <Button variant="contained" className="slider-btn">

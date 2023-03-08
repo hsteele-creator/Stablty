@@ -7,10 +7,13 @@ import mountain from "./mountain.jpg";
 import BlueWhite from "./bluewhite.jpg";
 import GradientBG from "./gradient-bg.png";
 import ImageSLider from "./ImageSlider";
+import beach from "./beach.jpg"
+import PhonePic from "./phone-pic.png";
+import qr from "./qr-code.png";
 
 const slides = [
   { url: mountain },
-  { url: bluebg },
+  { url: beach },
   { url: BlueWhite },
   {
     url: GradientBG,
@@ -24,6 +27,18 @@ const slides = [
     },
     button: { link: "/help", text: "learn a skill" },
   },
+  {
+    url : GradientBG,
+    text : {
+      title : "Ready to get started?",
+      first : "Download our app today"
+    },
+    images : {
+      first : qr,
+      second : PhonePic
+    },
+    button : { link : "https://apps.apple.com/us/app/stablty-llc/id1530005012", text : "download"}
+  }
 ];
 
 const Overview = () => {

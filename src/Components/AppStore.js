@@ -2,9 +2,7 @@ import React from "react";
 import "./AppStore.css";
 import { Button } from "@mui/material";
 import PhonePic from "./phone-pic.png";
-import Iphone from "./iphone-pic.jpg"
-import iphonepic from "./iphone.png"
-import logo from "./logo.jpg"
+import qr from "./qr-code.png";
 
 const AppStore = () => {
   return (
@@ -12,7 +10,7 @@ const AppStore = () => {
       <div id="app-store-container">
         <div id="app-store-text">
           <h3>Ready to Get Started? Download our app today</h3>
-            <p>Available on the app store</p>
+          <p>Available on the app store</p>
           <div id="btn-container">
             <button className="app-btn">
               {" "}
@@ -20,13 +18,16 @@ const AppStore = () => {
                 Download
               </a>
             </button>
+            <img id="qr" src={qr} />
           </div>
         </div>
         <div id="app-store-image">
           <img id="phone-img" src={PhonePic} />
         </div>
       </div>
-      <a id="credit" href='https://pngtree.com/so/apple'>apple png from pngtree.com/</a>
+      <a id="credit" href="https://pngtree.com/so/apple">
+        apple png from pngtree.com/
+      </a>
     </div>
   );
 };
