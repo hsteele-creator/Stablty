@@ -13,20 +13,17 @@
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
-  background-color: green;
 }
 
 #first-img {
-  width: 50px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  width: 80px;
+  margin-bottom: 20px;
 }
 
-#second-img {
+/* #second-img {
   width: 150px;
   margin-bottom: 10px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .slider-text-container {

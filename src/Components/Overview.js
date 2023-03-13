@@ -35,7 +35,7 @@ const slides = [
     },
     images : {
       first : qr,
-      second : PhonePic
+      // second : PhonePic
     },
     button : { link : "https://apps.apple.com/us/app/stablty-llc/id1530005012", text : "download"}
   }

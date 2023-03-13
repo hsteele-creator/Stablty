@@ -91,7 +91,7 @@ const ImageSLider = ({ slides, text }) => {
             <p className="second-text">{slides[currentIndex].text["second"]}</p>
             {slides[currentIndex].images ? <div id="slideshow-images">
               <img id="first-img" src={slides[currentIndex].images.first} />
-              <img id="second-img" src={slides[currentIndex].images.second} />
+              {/* <img id="second-img" src={slides[currentIndex].images.second} /> */}
             </div> : ""}
 
             {slides[currentIndex].button ? (
