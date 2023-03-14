@@ -16,6 +16,7 @@ import navygradient from "./navygradient.jpg"
 const Feeling = () => {
   return (
     <>
+    <div id="feelings-container-main" style={{backgroundImage : `url(${gradientbg})`, backgroundPosition : "center", backgroundRepeat : "no-repeat", backgroundSize : "cover"}}>
       <h1 id="feelings-title">What's bothering you?</h1>
       <div id="feelings-container">
         <FeelingCard
@@ -31,7 +32,7 @@ const Feeling = () => {
         <FeelingCard title={"Helpless"} img={Helpless} />
         <FeelingCard title={"Fear"} img={Fear} />
         <FeelingCard title={"Jealous"} img={Anger} />
-        <img src={gradientbg} />
+      </div>
       </div>
     </>
   );
