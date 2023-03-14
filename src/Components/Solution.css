@@ -1,5 +1,5 @@
 #video-section-container {
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
     margin-top: 100px;
     max-width: 2000px;
@@ -8,22 +8,24 @@
 }
 
 #video-container {
-    width: 45%;
+    width: 100%;
 }
 
 #video {
     border: none;
+    width: 100%;
+    margin-top: 80px;
 }
 
 #video-text {
-    width: 45%;
+    width: 100%;
     word-wrap: break-word;
     max-width: 450px;
     padding: 20px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius: 6px;
-    background-color: white;
     line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid;
 }
 
 #video-text p {
