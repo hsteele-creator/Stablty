@@ -14,15 +14,16 @@ const Solution = () => {
     <>
 
       <div id="video-section-container">
-        <div id="video-container">
-          <video id="video" controls width="300px" height="300px">
-            <source src={video} type="video/mp4"></source>
-          </video>
-        </div>
 
         <div id="video-text">
           <h1 id="app-title">Our App</h1>
           <p>Check out our app to gain the full stablty experience with personalized content, catered just for you.</p>
+        </div>
+
+        <div id="video-container">
+          <video id="video" controls width="340px" height="340px">
+            <source src={video} type="video/mp4"></source>
+          </video>
         </div>
       </div>
     </>
