@@ -69,7 +69,7 @@ const ImageSLider = ({ slides, text }) => {
       const isLastSlide = currentIndex === slides.length - 1;
       const newIndex = isLastSlide ? 0 : currentIndex + 1;
       setCurrentIndex(newIndex);
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [currentIndex]);

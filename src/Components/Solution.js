@@ -5,34 +5,26 @@ import nature from "./nature.jpg";
 import holdingphone from "./holdingphone.jpg";
 import "./Solution.css";
 import ImageSLider from "./ImageSlider";
+import video from "./video.mp4";
 
-const slides = [{ url: meditation}, { url: nature }, { url: holdingphone}];
+const slides = [{ url: meditation }, { url: nature }, { url: holdingphone }];
 
 const Solution = () => {
   return (
     <>
-      {/* <div id="solution-container">
-        <h1 id="solution-title">Our Solution</h1>
-        <div id="solution">
-          <SolutionBox
-            header="Intuitive"
-            image={meditation}
-            content="Stablty is a solution for people who don't connect with meditation. It offers an intuituve and comprehensive platform that engages users to learn and utilize healthy tools to control their mind."
-          />
-          <SolutionBox
-            header="Innovative"
-            image={nature}
-            content="Stablty combines the latest scientific research in mental health with effective techniques that users can quickly pick up and adapt to their lifestyle. It's a fitness app for mindfulness that helps users build their mental muscles."
-          />
-          <SolutionBox
-            header="Adaptive"
-            image={holdingphone}
-            content="Stablty offers customization that analyzes user patterns, suggests targeted areas for improvement, and allows the user to choose their own learning paths."
-          />
-        </div>
-      </div> */}
 
-        <iframe className="video" src="https://www.youtube.com/embed/SK9AlIbexOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div id="video-section-container">
+        <div id="video-container">
+          <video id="video" controls width="300px" height="300px">
+            <source src={video} type="video/mp4"></source>
+          </video>
+        </div>
+
+        <div id="video-text">
+          <h1 id="app-title">Our App</h1>
+          <p>Check out our app to gain the full stablty experience with personalized content, catered just for you.</p>
+        </div>
+      </div>
     </>
   );
 };

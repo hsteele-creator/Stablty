@@ -27,18 +27,6 @@ const slides = [
     },
     button: { link: "/help", text: "learn a skill" },
   },
-  {
-    url : GradientBG,
-    text : {
-      title : "Ready to get started?",
-      first : "Download our app today"
-    },
-    images : {
-      first : qr,
-      // second : PhonePic
-    },
-    button : { link : "https://apps.apple.com/us/app/stablty-llc/id1530005012", text : "download"}
-  }
 ];
 
 const Overview = () => {

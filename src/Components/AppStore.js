@@ -7,7 +7,7 @@ import qr from "./qr-code.png";
 const AppStore = () => {
   return (
     <div id="app-container">
-      <div id="app-store-container">
+      {/* <div id="app-store-container">
         <div id="app-store-text">
           <h3>Ready to Get Started? Download our app today</h3>
           <p>Available on the app store</p>
@@ -27,7 +27,10 @@ const AppStore = () => {
       </div>
       <a id="credit" href="https://pngtree.com/so/apple">
         apple png from pngtree.com/
-      </a>
+      </a> */}
+      <h1>Download our app today</h1>
+      <p>To get the full user experience download our app today, available on the app store.</p>
+      <img id="qr" src={qr} />
     </div>
   );
 };

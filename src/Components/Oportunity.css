@@ -5,42 +5,40 @@
 #opportunity-container {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
     margin: 50px 0;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .opportunity-box {
     width: 30%;
-    min-height: 30%;
     max-width: 350px;
-    vertical-align: middle;
-    padding: 16px 20px;
-    border: 0.5px solid;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    word-wrap: break-word;
+    font-size: 16px;
+    padding: 15px;
 }
 
-#future {
-    width: 70%;
-    margin-top: 50px;
+.opportunity-image-container {
+    width: 100%;
+    border-radius: 0;
 }
+
+.opportunity-image-container img {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+
 
 @media only screen and (max-width: 600px) {
-    .opportunity-box {
-        width: 100%;
-        margin: 20px auto;
-        height: 130px;
-        text-align: left;
-    }
-
     #opportunity-container {
         display: block;
     }
 
-    #future {
-        width: 70%;
-        margin-top: 30px;
-        margin-bottom: 50px;
+    .opportunity-box {
+        width: 100%;
+        margin: 20px auto 20px auto;
     }
+
 }

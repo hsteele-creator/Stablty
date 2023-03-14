@@ -19,6 +19,7 @@ import StressManagement from "./Components/StressManagement"
 import Coping from "./Components/Coping"
 import Goals from "./Components/Goals"
 import Gratitude from "./Components/Gratitude";
+import Future from "./Components/Future";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/positiveattitude" element={<PositiveAttitude />} />
         <Route path="/coping" element={<Coping />} />
         <Route path="/gratitude" element={<Gratitude />} />
+        <Route path="/future" element={<Future/>} />
       </Routes>
     </>
   );
